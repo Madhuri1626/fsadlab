@@ -1,0 +1,44 @@
+In React, there are two types of components that can be used to define the structure and behavior of UI elements: class components and functional components.
+
+Class components are defined using ES6 classes and are instances of the React.Component class. They have access to the full set of React lifecycle methods and can maintain their own internal state using the setState() method. Class components are typically used for more complex components that require state management, lifecycle methods, or event handling. Here is an example of a class component:
+
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  handleClick() {
+    this.setState({ count: this.state.count + 1 });
+  }
+
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.handleClick()}>Click me</button>
+      </div>
+    );
+  }
+}
+Functional components are defined as plain JavaScript functions and take a props object as input and return a JSX element. 
+They don't have access to the full set of React lifecycle methods, but they can be defined more concisely and are easier to read and test.
+Functional components are typically used for simpler components that don't require state management or lifecycle methods.
+Here is an example of a functional component that does the same thing as the class component above:
+
+function MyComponent(props) {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => handleClick()}>Click me</button>
+    </div>
+  );
+}
+
