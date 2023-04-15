@@ -1,0 +1,17 @@
+React is a popular front-end JavaScript library used to build user interfaces. Some of the key features of React include:
+
+Component-based architecture: React allows developers to create reusable UI components that can be composed together to create complex user interfaces.
+
+Virtual DOM: React uses a virtual DOM (Document Object Model) to efficiently update the UI. When data changes, React updates the virtual DOM and then compares it with the previous version to determine the minimal set of changes needed to update the actual DOM.
+
+Declarative syntax: React uses a declarative syntax, which makes it easy to reason about what the code is doing. Developers simply declare what they want the UI to look like and let React handle the details of updating the DOM.
+
+One-way data binding: React uses one-way data binding, which means that data flows in one direction, from parent components to child components.
+
+React Native: React can be used to build native mobile apps for iOS and Android using React Native, which is a framework for building mobile apps using React.
+
+
+JSX is a syntax extension for JavaScript that allows developers to write HTML-like code in their JavaScript files. It is used in React to defi
+ne the structure and content of UI components. JSX syntax looks like HTML, but it is actually a syntax extension that is transpiled into regular JavaScript by a build tool like Babel. JSX makes it easy to write declarative 
+code that describes the structure and content of a component. \
+For example, here's a simple JSX code snippet that defines a component that renders a button:
